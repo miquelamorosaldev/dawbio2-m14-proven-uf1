@@ -2,15 +2,28 @@
 ## UF1 - Informàtica mèdica.
 <br/>
 
-Aquesta UF us capci
-
 ## A01 - Entorn i llenguatge per processar dades biomèdiques.
 
 ### A011 - Preparació entorn local: SO Linux, Python, venv i editor VSCode.
 
+Podem muntar l'entorn de treball de 2 maneres semblants:
+#### Op1. Una instal·lació d'una màquina virtual de Linux amb VirtualBox i ús del VSCode a Windows.
+#### Op2. Una instal·lació de Linux nativa dins d'un disc dur SSD extraible. 
+
+- L'avantatge de la primera opció és que no cal gastar-se un euro i podem aprofitar el SO Windows per les 
+tasques que consumeixen més recursos (VSCode) i la màquina virtual de Linux com a servidor. Si tenim un ordinador d'alta gama (>8GB RAM i processador modern) es treballa bé així. L'inconvenient és que heu de repetir els passos o clonar la màquina i portar-la a casa, les FCT (a no ser que allí ja tingueu Linux)...
+
+- L'avantatge de la segona opció és que només cal aplicar els passos un sol cop, i ja podem
+emportar-nos tot el sistema a l'institut, a casa, a les FCT i on volguem. Val la pena la petita
+inversió econòmica. És útil per aprofitar les prestacions del PC si no és car.
+
+En qualsevol cas recomanem que useu Python i Linux i exposarem les 2 maneres.
+
 1. [S01_PreparacioEntorn](./S01_PreparacioEntorn "Sessió 1 i 2")
-	- Creació usb bootable amb iso de PopOS o Ubuntu 22.04 LTS
-	- Instal·lació de noves versions de Python diferent al de PopOs o Ubuntu
+	- Op1. Instal·lació de Linux nativa dins d'un SSD.
+	- Op2. Instal·lació de màquina virtual Linux.
+	- Instal·lació PopOS o Ubuntu 22.04 LTS
+	- Entorn virtual de Python aïllat del SO (PopOs o Ubuntu)
 	- Comandes bàsiques (cheatsheet)
 	- Instal·lació i proves amb JupyterLab (**.ipynb** )
 	- Integració IDE VSCode.

@@ -1,37 +1,56 @@
-# Instalació disc dur SSD USB bootable amb Linux
-## Pablo Garcia, Miquel Angel Bardají, Miquel Amorós.
+# Instalació entorn i tecnologies de treball.
 
+A l'inici de la guia ens hem de decantar per una de les 2 opcions de treball.
 
 <a name="toc"></a>
 
-* [Instal.lació PopOs o Ubuntu en un SSD](#installpopos)
-* [Instal·lació d´una versió de Python diferent del sistema Linux amb Anaconda](#python)
-* [Comandes bàsiques gestor Conda](#conda)
+* [Op1. Instal·lació de màquina virtual Linux.](#op1_vm_linuxserver)
+* [Op2. Instal·lació de Linux nativa dins d'un SSD.](#op2_ssd_installpopos)
+* [Utilitats Linux](#linux_utils)
+* [Instal·lació d´una versió de Python diferent del sistema Linux amb venv](#python3_venv)
 * [Intèrprets de Python](#interprets)
 * [Entorn JupyterLab](#jupyterlab)
 * [IDE VSCode](#vscode)
-* [Desinstal.lació Conda](#uninstallconda)
 
-<a name="installpopos"></a>
+#### Primerament recordem com instal·lar PopOS! 
 
-### Instal·lar PopOS 22.04 LTS
-
-## <strong style="color:red;"> Abans de tot, cal fer còpies de seguretat de totes les dades!</strong>
-
-**⚠️ Un cop fetes, per experiència us recomanem que torneu a instal.lar des de 0 el sistema a la versió 22.04 LTS si no el teniu Aquesta guia us ajudarà. ⚠️** 
-
-**Si teniu Ubuntu 22 LTS també funcionarà tot OK per aquest curs.**
-
-En canvi, si teniu PopOS 20 LTS o Ubuntu recomanem la instal·lació des de 0 en comptes del **full-upgrade**. Tot i que [la pàgina oficial assegura que amb dues comandes s'actualitza el sistema](https://support.system76.com/articles/upgrade-pop/), la veritat és que en ocasions poden deixar de funcionar programes i perifèrics després de l'actualització. Amb Ubuntu ens ha passat i Popos també hi ha risc que passi. 
+[M01. Doc.Comp. Instal·lació màquina virtual Linux PopOS! 22 LTS](https://docs.google.com/document/d/196580myY0i2MUFI7PPs2n_RtYO3jUaropxpODqnrCyU/edit#heading=h.ool1wwrkfx9s)
+[M01. PDF. Instal·lació màquina virtual Linux PopOS! 22 LTS, setembre 2023](./DAWBIO1-M01-UF1-NF2%20INSTAL·LACIÓ%20POPOS22%20LTS%20AMB%20VIRTUALBOX.pdf)
 
 
-<a name="installpopos"></a>
+<a name="op1_vm_linuxserver"></a>
 
-### Hardware necessari
+En el cas de voler tenir d'una màquina virtual de Linux amb VirtualBox, suposant que el sistema operatiu host és Windows (el cas de l'institut) seguiu aquestes recomanacions.
+
+Podeu triar 2 opcions:
+1. Instal·lar PopOS o Ubuntu 22.04 LTS en una màquina virtual si no els teniu. Si ja els teniu els podeu aprofitar.
+2. Instal·lar Ubuntu Server si voleu una experiència més fluida, ja que al no disposar d'entorn gràfic (que  segurament no el necessitareu) es consumeix menys RAM i CPU.
+
+## TODO. Document de treball d'aquesta opció, li trauré el link quan acabi:
+
+https://docs.google.com/document/d/1rcFciC9QomiV08VoHR40ZTcBzzehsiyDft2euRNbFlM/edit
+
+
+<a name="op2_ssd_installpopos"></a>
+
+En el cas de voler tenir l'entorn dins d'un disc dur SSD seguiu aquestes indicacions.
+
+Recomanem instal·lar PopOS 22.04 LTS al disc si no el tenim.
+
+**Si teniu Ubuntu o PopOS 22 LTS funcionarà tot OK per aquest curs.**
+
+### <strong style="color:red;"> Abans de tot, cal fer còpies de seguretat de totes les dades!</strong>
+
+En canvi, si teniu PopOS 20 LTS o Ubuntu recomanem la instal·lació des de 0 en comptes del **full-upgrade**. 
+
+Tot i que [la pàgina oficial assegura que amb dues comandes s'actualitza el sistema](https://support.system76.com/articles/upgrade-pop/), la veritat és que en ocasions poden deixar de funcionar programes i perifèrics després de l'actualització. Amb Ubuntu ens ha passat i Popos també hi ha risc que passi. 
+Per ara, desaconsellem instal·lar la versió 23 d'aquests sistemes, millor esperar a la 24 i només quan la declarin LTS.
+
+### Hardware necessari.
  - USB(3.0) de >= 8 GB Linux
  - ISO amb el PopOS (iso és el fitxer que té l'estructura d´un cd) El ordinador creurà que la ISO és un CD. → Instal·lador y un modo live(de prueba). 
  - Disc dur SSD >= 128 GB → Aconsellats: Crucial, SanDisk, Kingston, PNY. Comprar-los a PC Componentes o comerços online grans.
- - Cable Sata 3.0 → USB 3.0 (el podeu comprar apart o bé us ve inclòs amb el SSD) 
+ - Cable Sata USB 3.0 -> Els discs durs SSD que no venen amb cable USB són més econòmics i permeten obrir la torre i endollar-los; sempre podeu comprar el cable USB apart. En moltes ocasions comprar els 2 components és més barat que comprar un disc dur SSD amb cable USB inclòs. 
 
 ### Programari necessari (2 opcions)
 
@@ -70,6 +89,8 @@ El SystemBoot de la BIOS ha d'estar desactivat.
     - Aquí tries el disc dur extern. ⚠️ Aquest moment has de triar el disc dur (SSD) i no equivocar-te. ⚠️
     - No escollir l´opció encriptar el password, perque si hi ha un problema, des de fora es pot ajudar una mica més.
 
+<a name="linux_utils"></a>
+
 ### Utilitats i comandes Ubuntu
 
 - **INXI** --> és una ordre que trobem en l'última versió d'Ubuntu (i PopOS) i que ens mostra totes les especificacions de l´equip, des del sòcol del processador fins al nucli de sistema operatiu que estem fent servir passant pels processos oberts que està executant el sistema operatiu.
@@ -82,12 +103,14 @@ inxi
 - **System Monitor -->**  Recomanable [crear una drecera per activar el system-monitor per si es realenteix el sistema](https://askubuntu.com/questions/399992/how-to-open-system-monitor-easily). 
 És l'equivalent al Adm. Tasques del Windows.
 
+[Índex de continguts](#toc)
+
 <hr/>
-<a name="python"></a>
+<a name="python3_venv"></a>
 
 ## Instal·lació d´una versió de Python diferent del sistema Linux.
 
-🚩 És convenient no utilitzar el Python que ve instal·lat per defecte, sinó crear un entorn virtual amb el seu Python, les seves llibreries i aïllat del sistema. Això ho farem amb Conda. També es podria fer amb venv (Virtualenv) i pip.
+🚩 És convenient no utilitzar el Python que ve instal·lat per defecte a Linux (que el necessita el SO), sinó crear un entorn virtual amb el seu Python, les seves llibreries i aïllat del sistema. Això ho farem amb venv (Virtualenv) i pip.
 
 🚩 També és important no utilitzar la comanda sudo a partir d'ara, treballarem en mode usuari sense privilegis per no alterar el SO. A les companyies on treballarem rarament estarem al grup de sudoers (rarament serem admin). 
 
@@ -101,122 +124,39 @@ Fem unes comprovacions prèvies:
 	  
 - Per poder instal·lar la nostra versió de python, necessitem saber on es troben els python de sistema, per no fer-los malbé. Posarem la comanda **echo $PATH | sed -E "s/:/\n/g"**.
 
-Ara sí, instal·larem **Conda - Anaconda**, que és un software que ens permet dues coses:
-	  
-- **Gestor d'entorns virtuals** Un directori amb llibreries i executables, aïllats de la resta. Així evitem problemes de compatibilitat. Anaconda els posa a anaconda3/env
-	    
-- **Gestor de paquets** Conjunt d´arxius necessaris per a un executable o llibreria (codi que es pot executar des de un executable). Suporta Python i R.
+Ara sí, instal·larem:
+- **Gestor d'entorns virtuals venv**. És un directori amb llibreries i executables, aïllats de la resta. Així evitem problemes de compatibilitat. 
+
+- **Gestor de paquets pip** Conjunt d´arxius necessaris per a un executable o llibreria, necessari per extendre les possibilitats de les llibreries estàndard de Python. Suporta Python i R.
 	       
-L´instal·larem perque no permet requerir permis d'administrador (ideal per empreses)
-	
+L´instal·larem perque no requereix permis d'administrador (ideal per empreses)
+
+ⓘ Una alternativa seria usar el gestor Anaconda, que proporciona les 2 funcions alhora, però és una mica més pesat i no és tan senzill d’integrar amb Docker, per això ho descartem. ⓘ
+
+
 1.  Baixarem l'instal·lador de la pagina oficial de [Anaconda](https://www.anaconda.com/products/distribution) 
-	
-**64-Bit (x86) Installer** 
-64-Bit(la quantitat de memoria que podem dirigir) (x86 (Arquitectura Intel)). Extensió sh (shell)
 
-2. Dins l'instal·lador podem mirar dins el fitxer amb **less nom_fitxer**, i veiem quin codi hi ha.
-	
-3. Executem "sh nom_instal·lador.sh"  i hem de fer els passos:
-```bash
-	> Do you accept the license terms? [yes|no]
-	>[no] >>> yes
-	>Anaconda3 will now be installed into this location:
-	>/home/alumne/anaconda3
-	>
-	>  - Press ENTER to confirm the location
-	>  - Press CTRL-C to abort the installation
-	>  - Or specify a different location below
-	> ...
-	>Preparing transaction: done
-	>Executing transaction: done
-	>installation finished.
-	>Do you wish the installer to initialize Anaconda3
-	>by running conda init? [yes|no]
-	>[no] >>> **yes**
+Aplica aquestes comandes des de la terminal bash:
+
+```sh
+$ python3 -m venv .bio
+$ source .bio/bin/activate
+(bio) 
 ```
-		
-	Un cop instal·lat i perquè s'adoni del canvi, **tanquem la terminal i la tornem a obrir**. Sinò et surt pots seguir aquest [tutorial](https://www.solvetic.com/tutoriales/article/8876-instalar-anaconda-en-ubuntu-20-04/)
-		>Ajuda --> Ctrl-C (tancar proces amb linux)
-		 
-	 Si sense voler no ens ha parat a la pregunta conda init (hem apretat el enter mentre s´estaven descomprimint arxius) --> Llavors fiquem ./ conda_init (executable al directori actual, ens hem de ficar a "~/anaconda3/bin")
 
-[Índex de continguts](#toc)
+Fixa't que a la tercera línia, i al arrencar el terminal et sortirà la paraula (bio), és l'espai de l'entorn que hem creat a la primera línia, i hem activat a la segona. 
+
+Si volem desactivar-lo (per si volem tenir 2 entorns):
+```sh
+(bio) $ deactivate
+$
+```
+
+**⚠ Important! Assegureu-vos que al treballar sempre tingueu activat (i visible) el vostre entorn ⚠**
 
 <hr/>
-<a name="conda"></a>
 
-## Comandes bàsiques pel gestor Conda.
-
-· [CheatSheet Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html) 
-
-### Comandes comprovacions previes a la instal·lació de python3
-A l'arrancar el terminal et sortirà la paraula (base), és el intèrpret de Conda, i l'entorn base que crea sempre per defecte. Per poder sortir de l'intèrpret, NO ES *CTRL-C*, sinò es *Ctrl-D* (fi d'ordres de teclat), però això tanca el terminal, en tornar a obrir sortirà.
-
-**Comprovacions**
-
-- Per saber que tenim python d´anaconda, podem ficar la instrucció **which -a python3**, i veiem el nou python.
-- Per saber on es conda, executem **which -a conda**.
-- Per veure el propietari **ls -lisah /home/alumne/anaconda3/bin/conda**
-- Comanda friki **ls -lisah $(which conda)**, la sortida de la comanda interior, es la entrada de la comanda més exterior.
-
-### Comandes instal·lació de Python amb Anaconda.
-
-Executem aquesta comanda per actualitzar Conda a la última versió. 
-Si ja tenim una versió recent no cal.
-
-```sh 
-conda update -n base -c defaults conda
-```
-
-### Crear el teu propi entorn. 
-
-Creem un nou entorn Conda (així no trepitgem l'entorn base)
-
-[tutorial](https://www.devacademy.es/entornos-virtuales-en-python-anaconda).
-
-**Recomanació: Un nom amb minúscules i curt. Per exemple: bio.**
-
-#### Pas 1.
-
-```sh
-conda create -n nomenv
-```
-
-#### Pas 2.
-
-Instal.lem una llibreria, la del Jupyter Labs
-
-<em>Acrònim de: Ju -> Julia, Py -> Python, R -> R.</em>
-
-```sh
-conda install -n nomenv -c conda-forge jupyterlab
-```
-
-#### Pas 3.
-Per activar-lo, un cop ja es troba creat fem:
-
-```sh
-conda activate nomenv
-```
-
-#### Pas 4.
-Per desactivar l'entorn (i usar-ne un altre), trobant-nos al entorn s'utilitza 
-
-```sh
-conda deactivate
-```
-També podem veure la llista d'entorns:
-
-```sh
-conda env list
-```
-
-Per esborrar un entorn:
-```sh
-conda env remove -n nomenv
-```
-
-### Instal·lació python --> 
+### Instal·lació Python --> 
 
 Un cop instal·lat un entorn de Conda, Python queda instal·lat a la última versió (la 3.10 l'any 2022, 3.11 2023).
 
@@ -224,6 +164,8 @@ Ho podem verificar mitjançant la comanda:
 ```sh
 python --version
 ```
+
+[Índex de continguts](#toc)
 
 <hr/>
 <a name="interprets"></a>
@@ -245,7 +187,6 @@ jupyter lab
 
 [Índex de continguts](#toc)
 
-
 <a name="jupyterlab"></a>
 
 ### Entorn JupyterLab
@@ -266,9 +207,9 @@ conda install -n nomenv -c conda-forge jupyterlab
 
 ### Integració IDE VSCode.
 
-Va molt bé integrar el nostre entorn operatiu (Conda, Python, Jupyter, llibreries com Pandas... ) a Visual Studio Code.
+Va molt bé integrar el nostre entorn operatiu a Visual Studio Code. Tant si esteu usant Windows+Linux com únicament Linux.
 
-#### Important! Instal.leu la versió deb, no la flatpak.
+**⚠ Important! Si esteu a Linux, instal.leu la versió deb, no la flatpak.⚠**
 
 La podeu instal.lar o bé pel PopOS! Shop
 
@@ -282,7 +223,8 @@ VSCode ens pregunta si volem instal.lar eines per a Pyhton, li diem que sí.
 També podem instal.lar-ne per a Markdown. 
 
 A la part inferior per defecte ens sortirà el Python que tenim a la màquina. 
-Si la instal.lació de Conda ha funcionat podem seleccionar el Python de l'entorn de Conda que hem instal.lat prèviament.
+
+Si la instal.lació de venv ha funcionat hem de seleccionar el Python de l'entorn de Conda que hem instal.lat prèviament.
 
 ![](SeleccionarPythonInterpreter.PNG)
 
@@ -315,31 +257,3 @@ Podem provar els 2 tipus de fitxers.
 [Índex de continguts](#toc)
 
 <hr/>
-
-<a name="uninstallconda"></a>
-
-### Desinstal.lació Conda
-
-Si mai fa falta, podeu desinstal.lar Conda així:
-
-1. Esborrrar el directori 
-```<dir_home>/anaconda3```
-
-2. Editar l'arxiu ```.bashrc```, que conté la ruta dels executables de Conda, entre d'altres.
-
-Esborrem el bloc de codi que comença i acaba per conda initialize.
-
-```sh
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/alumne/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-....
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-```
-3. Esborrar altres directoris de backups que conda hagi pogut crear.
-
-Per exemple: .conda
-
-[Índex de continguts](#toc)
