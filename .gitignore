@@ -1,0 +1,4 @@
+*.pyc
+/bio/
+/venv/
+.bio
