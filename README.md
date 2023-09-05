@@ -48,7 +48,7 @@ Fora dels apunts impartits a classe, però interessant:
 
 ⌚ Temps previst: Entre la sessió 1 i la sessió 2.
 
-1. [Sessió 1 i 2](./Sessi%C3%B31_PreparacioEntorn "Sessió 1 i 2")
+1. [Sessió 1 i 2](./UF1_A01_Ses1_PreparacioEntornConda "Sessió 1 i 2")
 	- Creació usb bootable amb iso de PopOS o Ubuntu 22.04 LTS
 	- Instal·lació de noves versions de python diferent al de PopOs o Ubuntu
 	- Instal·lació Anaconda i comandes bàsiques (cheatsheet)
@@ -62,7 +62,7 @@ Fora dels apunts impartits a classe, però interessant:
 Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures bàsiques de Python, i aquí en fem un repàs.
 La resta de recursos queden com a referència. 
 
-1. [Repàs Python, part 1](./A012_RepasPythonPart1 "Repàs Python, part 1")
+1. [Repàs Python,](./A012_RepasPythonPart1 "Repàs Python, part 1")
 	- Introducció Bàsica a Python 
 		- print
 		- condicions i bucles

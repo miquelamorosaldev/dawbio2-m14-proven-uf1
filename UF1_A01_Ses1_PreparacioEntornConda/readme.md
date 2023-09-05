@@ -72,17 +72,14 @@ El SystemBoot de la BIOS ha d'estar desactivat.
 
 ### Utilitats i comandes Ubuntu
 
-- INXI --> és una ordre que trobem en l'última versió d'Ubuntu (i PopOS) i que ens mostra totes les especificacions de l´equip, des del sòcol del processador fins al nucli de sistema operatiu que estem fent servir passant pels processos oberts que està executant el sistema operatiu.
-
-https://ubunlog.com/inxi-cli-informacion-equipo/#Instalar_inxi
+- **INXI** --> és una ordre que trobem en l'última versió d'Ubuntu (i PopOS) i que ens mostra totes les especificacions de l´equip, des del sòcol del processador fins al nucli de sistema operatiu que estem fent servir passant pels processos oberts que està executant el sistema operatiu.
 
 ```sh
 apt install inxi
 inxi
 ```
 
-- System Monitor --> 
-Recomanable [crear una drecera per activar el system-monitor per si es realenteix el sistema](https://askubuntu.com/questions/399992/how-to-open-system-monitor-easily). 
+- **System Monitor -->**  Recomanable [crear una drecera per activar el system-monitor per si es realenteix el sistema](https://askubuntu.com/questions/399992/how-to-open-system-monitor-easily). 
 És l'equivalent al Adm. Tasques del Windows.
 
 <hr/>
@@ -112,26 +109,31 @@ Ara sí, instal·larem **Conda - Anaconda**, que és un software que ens permet 
 	       
 L´instal·larem perque no permet requerir permis d'administrador (ideal per empreses)
 	
-	1.  Baixarem l'instal·lador de la pagina oficial de [Anaconda](https://www.anaconda.com/products/distribution) - **64-Bit (x86) Installer ** *64-Bit(la quantitat de memoria que podem dirigir) (x86 *(Arquitectura Intel)*) *.  Extensió sh (shell)
-	2. Dins l'instal·lador podem mirar dins el fitxer amb **less nom_fitxer**, i veiem quin codi hi ha.
-	3. Executem "sh nom_instal·lador.sh"  i hem de fer els passos:
-	```sh
-		> Do you accept the license terms? [yes|no]
-		>[no] >>> yes
-		>Anaconda3 will now be installed into this location:
-		>/home/alumne/anaconda3
-		>
-		>  - Press ENTER to confirm the location
-		>  - Press CTRL-C to abort the installation
-		>  - Or specify a different location below
-		> ...
-		>Preparing transaction: done
-		>Executing transaction: done
-		>installation finished.
-		>Do you wish the installer to initialize Anaconda3
-		>by running conda init? [yes|no]
-		>[no] >>> **yes**
-	```
+1.  Baixarem l'instal·lador de la pagina oficial de [Anaconda](https://www.anaconda.com/products/distribution) 
+	
+**64-Bit (x86) Installer** 
+64-Bit(la quantitat de memoria que podem dirigir) (x86 (Arquitectura Intel)). Extensió sh (shell)
+
+2. Dins l'instal·lador podem mirar dins el fitxer amb **less nom_fitxer**, i veiem quin codi hi ha.
+	
+3. Executem "sh nom_instal·lador.sh"  i hem de fer els passos:
+```bash
+	> Do you accept the license terms? [yes|no]
+	>[no] >>> yes
+	>Anaconda3 will now be installed into this location:
+	>/home/alumne/anaconda3
+	>
+	>  - Press ENTER to confirm the location
+	>  - Press CTRL-C to abort the installation
+	>  - Or specify a different location below
+	> ...
+	>Preparing transaction: done
+	>Executing transaction: done
+	>installation finished.
+	>Do you wish the installer to initialize Anaconda3
+	>by running conda init? [yes|no]
+	>[no] >>> **yes**
+```
 		
 	Un cop instal·lat i perquè s'adoni del canvi, **tanquem la terminal i la tornem a obrir**. Sinò et surt pots seguir aquest [tutorial](https://www.solvetic.com/tutoriales/article/8876-instalar-anaconda-en-ubuntu-20-04/)
 		>Ajuda --> Ctrl-C (tancar proces amb linux)
@@ -196,6 +198,7 @@ Per activar-lo, un cop ja es troba creat fem:
 ```sh
 conda activate nomenv
 ```
+
 #### Pas 4.
 Per desactivar l'entorn (i usar-ne un altre), trobant-nos al entorn s'utilitza 
 
@@ -215,7 +218,7 @@ conda env remove -n nomenv
 
 ### Instal·lació python --> 
 
-Un cop instal·lat un entorn de Conda, Python queda instal·lat a la última versió (la 3.10 l'any 2022).
+Un cop instal·lat un entorn de Conda, Python queda instal·lat a la última versió (la 3.10 l'any 2022, 3.11 2023).
 
 Ho podem verificar mitjançant la comanda:
 ```sh
@@ -229,6 +232,7 @@ python --version
 
 - **python3**
 Molt bàsic.
+
 - **ipython** (depen del python3), versió amb format enriquit i amb colors. Versió no oficial de python. Ens permet guardar l'historial, ideal per fer proves ràpides.
 - 
 ![](CapturaIPython.PNG)
