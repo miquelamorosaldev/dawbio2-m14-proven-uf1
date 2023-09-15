@@ -4,66 +4,74 @@
 
 ## A01 - Entorn i llenguatge per processar dades biomèdiques.
 
-### A011 - Preparació entorn local: SO Linux, Python, venv i editor VSCode.
+### Sessió 1 - Preparació entorn local: SO Linux, Python, venv i editor VSCode.
 
 Podem muntar l'entorn de treball de 2 maneres semblants:
+
 #### Op1. Una instal·lació d'una màquina virtual de Linux amb VirtualBox i ús del VSCode a Windows.
+
+Aquesta opció <a href="https://docs.google.com/document/d/1q8HR7pqQf4RTePXK9fe7Q-ywn-COaPI4M1mXEn-Y-PQ/edit#heading=h.v2vgeymgts4e">la exposem pas a pas per aplicar-la aquest curs 2023-2023 en un Doc.Compartit</a>
+
+La pàgina oficial del projecte que usem és https://box.xtec.dev/
+
+- ✅ L'avantatge de la primera opció és que no cal gastar-se un euro i podem aprofitar el SO Windows per les  tasques que consumeixen més recursos (VSCode) i la màquina virtual de Linux com a servidor. Si tenim un ordinador de gama mitjana o alta (>8GB RAM i processador modern) es treballa bé així. ✅
+- ⚠ L'únic inconvenient és que heu de repetir els passos o clonar la màquina i portar-la a casa, les FCT (a no ser que allí ja tingueu Linux) ⚠
+
 #### Op2. Una instal·lació de Linux nativa dins d'un disc dur SSD extraible. 
 
-- L'avantatge de la primera opció és que no cal gastar-se un euro i podem aprofitar el SO Windows per les 
-tasques que consumeixen més recursos (VSCode) i la màquina virtual de Linux com a servidor. Si tenim un ordinador d'alta gama (>8GB RAM i processador modern) es treballa bé així. L'inconvenient és que heu de repetir els passos o clonar la màquina i portar-la a casa, les FCT (a no ser que allí ja tingueu Linux)...
+Aquesta opció <a href="./UF1_A01_Ses1_PreparacioEntornConda">la vam usar en cursos anteriors en aquesta wiki</a>
 
-- L'avantatge de la segona opció és que només cal aplicar els passos un sol cop, i ja podem
-emportar-nos tot el sistema a l'institut, a casa, a les FCT i on volguem. Val la pena la petita
-inversió econòmica. És útil per aprofitar les prestacions del PC si no és car.
+
+- ✅  L'avantatge de la segona opció és que només cal aplicar els passos un sol cop, i ja podem emportar-nos tot el sistema a l'institut, a casa, a les FCT i on volguem. És útil per aprofitar les prestacions del PC. ✅
+- ⚠ L'inconvenient és que cal fer una petita inversió econòmica i de temps. ⚠
 
 En qualsevol cas recomanem que useu Python i Linux i exposarem les 2 maneres.
 
-1. [S01_PreparacioEntorn](./S01_PreparacioEntorn "Sessió 1 i 2")
-	- Op1. Instal·lació de Linux nativa dins d'un SSD.
-	- Op2. Instal·lació de màquina virtual Linux.
-	- Instal·lació PopOS o Ubuntu 22.04 LTS
-	- Entorn virtual de Python aïllat del SO (PopOs o Ubuntu)
-	- Comandes bàsiques (cheatsheet)
-	- Instal·lació i proves amb JupyterLab (**.ipynb** )
-	- Integració IDE VSCode.
-
-### 🐍 A012 - Repàs funcionalitats bàsiques de Python. 🐍
+### 🐍 Sessió 1 - Repàs funcionalitats bàsiques de Python. 🐍
 
 Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures bàsiques de Python, i aquí en fem un repàs.
 La resta de recursos queden com a referència. 
+- Introducció Bàsica a Python 
+- print
+- condicions i bucles
+- llistes, list comprension
+- diccionaris
+- Tuples
+- Slices
+- Conjunts (Sets)
+- Ajuda
 
-1. [Repàs Python](./A012_RepasPythonPart1 "Repàs Python, part 1")
-	- Introducció Bàsica a Python 
-		- print
-		- condicions i bucles
-		- llistes, list comprension
-		- diccionaris
-		- Tuples
-		- Slices
-		- Conjunts (Sets)
-		- Ajuda
-		- Llegir fitxers CSV amb iteradors
-		- Instrucció Yield
-		- Prog. Funcional : Map i filter
-3. [Txuletari Python](./A012_Cheatsheet "Txuletari Python")
-	- Txuletari propi de comandes bàsiques python per Llistes i Diccionaris.
+[Repàs Python, format wiki](./A012_RepasPythonPart1 "Repàs Python, part 1")
 
-**[A012-Exercicis-JupyterNb-Sessio3](./A012_ExercicisBasicsPython/readme.md "A012-Exercicis-JupyterNb-Sessio3")**
+[Repàs Python, format JupyterNotebook](https://colab.research.google.com/drive/1axvXnQdWhBTO-zTcv_mI6_cK30XPpj3v?authuser=0#scrollTo=XZShFCsbUcVj&uniqifier=1)
 
 <hr/>
 
-### A013 - Exercicis explotació de dades amb Python.
+### 🐍 Sessió 2 - Programació OO i Funcional amb Python. 🐍
 
+Documentació
 
-### A014 - Introducció a les API's amb Flask
+Codi Font
 
+### 🐍 Sessió 2 - Exercicis explotació de dades de fitxers CSV amb Python. 🐍
 
-### A015 - 🖧 Preparació d'un entorn de desenvolupament amb Docker 🖧
+Documentació
 
+Codi Font
 
-1. [Sessió 4 - Conceptes previs, instal·lació de Docker i el nostre primer contenidor](./UF2_Sessions1+2_Docker)
-2. [Sessió 5 - Creem més contenidors de Docker](./UF2_Sessions2+3_Docker)
+<hr/>
 
+## Pròximament
+
+### Introducció a les API's amb Flask
+### Arrays de Numpy i series de Pandas.
+### Pandas Dataframes.
+
+### 🖧 Preparació d'un entorn de desenvolupament amb Docker 🖧
+
+Material any 2022-2023; pendent provar de nou:
+
+1. [Conceptes previs, instal·lació de Docker i el nostre primer contenidor](./UF2_Sessions1+2_Docker)
+2. [Creem més contenidors de Docker](./UF2_Sessions2+3_Docker)
 
 <hr/>
