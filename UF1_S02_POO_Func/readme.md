@@ -7,8 +7,11 @@
 ### Programació OO i separació codi. Estadística.
 
 BioModules
+
     __init.py__
+    
 sepcodi-est-pluges.py
+
 sepcodi-est-notes.py
 
 
