@@ -1,6 +1,6 @@
 # Repàs d'instruccions de Python.
 
-##       <center>Pablo Garcia, Miquel Angel Bardají</center>
+##  <center>Pablo Garcia, Miquel Angel Bardají</center>
 <p></p>
 
 ### Bibliografia Python

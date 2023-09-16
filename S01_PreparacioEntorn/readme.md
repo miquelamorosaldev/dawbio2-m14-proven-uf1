@@ -1,4 +1,4 @@
-# Instalació entorn de treball. 
+# Instalació entorn de treball.
 
 <a name="toc"></a>
 

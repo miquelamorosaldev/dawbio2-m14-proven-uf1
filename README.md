@@ -41,6 +41,8 @@ La resta de recursos queden com a referència.
 - Conjunts (Sets)
 - Ajuda
 
+Podeu triar el format de document que preferiu (no cal els 2, són molt semblants)
+
 [Repàs Python, format wiki](./A012_RepasPythonPart1 "Repàs Python, part 1")
 
 [Repàs Python, format JupyterNotebook](https://colab.research.google.com/drive/1axvXnQdWhBTO-zTcv_mI6_cK30XPpj3v?authuser=0#scrollTo=XZShFCsbUcVj&uniqifier=1)
