@@ -49,13 +49,11 @@ Podeu triar el format de document que preferiu (no cal els 2, són molt semblant
 
 <hr/>
 
-### 🐍 Sessió 2 - Programació OO i Funcional amb Python. 🐍
+### 🐍 Sessió 2.1 - Programació OO i Funcional amb Python. 🐍
 
-Documentació
+[Documentació i codi font](./UF1_S02_POO_Func)
 
-Codi Font
-
-### 🐍 Sessió 2 - Exercicis explotació de dades de fitxers CSV amb Python. 🐍
+### 🐍 Sessió 2.2 - Exercicis explotació de dades de fitxers CSV amb Python. 🐍
 
 Documentació
 
