@@ -319,11 +319,11 @@ Timestamp('2013-01-02 00:00:00')
 
 ## Cheatsheet instruccions bàsiques.
 
-A partir del exemple creat per nosaltres, amb les notes dels estudiants de DAWBIO que volen fer dual, veurem les principals funcions del dataframe.
+A partir del exemple creat per nosaltres, amb les notes dels estudiants de DAWBIO que estan FCT, veurem les principals funcions del dataframe.
 
 <a name="dataframe"></a>
 
-Tenim varies llistes individuals, que al final formaran un sol dataframe:
+Tenim varies llistes indiviFCTs, que al final formaran un sol dataframe:
 
 ```python
 #les notes de dawbio amb dataframe
@@ -347,7 +347,7 @@ print(students_frame)
     <tr style="text-align: right;">
       <th></th>
       <th>grade</th>
-      <th>dual</th>
+      <th>FCT</th>
     </tr>
   </thead>
   <tbody>
@@ -384,7 +384,7 @@ print(students_frame)
 students_frame.dtypes
 ```
     grade    int64
-    dual      bool
+    FCT      bool
     dtype: object
 
 ## Funcions bàsiques de Pandas.
@@ -398,42 +398,6 @@ students_frame.dtypes
 students_frame.head()
 ```
 
-<div>
-
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>grade</th>
-      <th>dual</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>John</th>
-      <td>7</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <th>Mary</th>
-      <td>9</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>Lucy</th>
-      <td>8</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <th>Peter</th>
-      <td>4</td>
-      <td>True</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
 ```python
 # Les primeres 2 files
 students_frame.head(2)
@@ -444,7 +408,7 @@ students_frame.head(2)
     <tr style="text-align: right;">
       <th></th>
       <th>grade</th>
-      <th>dual</th>
+      <th>FCT</th>
     </tr>
   </thead>
   <tbody>
@@ -477,7 +441,7 @@ students_frame.tail(2)
     <tr style="text-align: right;">
       <th></th>
       <th>grade</th>
-      <th>dual</th>
+      <th>FCT</th>
     </tr>
   </thead>
   <tbody>
@@ -554,7 +518,7 @@ students_frame.sample()
     <tr style="text-align: right;">
       <th></th>
       <th>grade</th>
-      <th>dual</th>
+      <th>FCT</th>
     </tr>
   </thead>
   <tbody>
@@ -596,7 +560,7 @@ students_frame.T
       <td>4</td>
     </tr>
     <tr>
-      <th>dual</th>
+      <th>FCT</th>
       <td>False</td>
       <td>True</td>
       <td>False</td>
@@ -619,7 +583,7 @@ students_frame.T
 #### Ordenació dataframes per un índex
 
 ```python
-#Ordenació per index axis=0 el index de la primera columna, axis=1 ordena els index de la primera columna (dual,grade)
+#Ordenació per index axis=0 el index de la primera columna, axis=1 ordena els index de la primera columna (FCT,grade)
 students_frame_sorted = students_frame.sort_index(axis=1, 
                                                   ascending=True)
 students_frame_sorted
@@ -631,7 +595,7 @@ students_frame_sorted
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>dual</th>
+      <th>FCT</th>
       <th>grade</th>
     </tr>
   </thead>
@@ -680,7 +644,7 @@ students_grade_sorted
     <tr style="text-align: right;">
       <th></th>
       <th>grade</th>
-      <th>dual</th>
+      <th>FCT</th>
     </tr>
   </thead>
   <tbody>
@@ -748,11 +712,11 @@ students_frame.loc["Lucy","grade"]
 
 ```python
 #busqueda de mes d'una columna
-students_frame.loc["Lucy",["grade","dual"]]
+students_frame.loc["Lucy",["grade","FCT"]]
 ```
 
     grade        8
-    dual     False
+    FCT     False
     Name: Lucy, dtype: object
 
 
@@ -764,7 +728,7 @@ students_frame.loc["Lucy",:]
 ```
 
     grade        8
-    dual     False
+    FCT     False
     Name: Lucy, dtype: object
 
 
@@ -838,7 +802,7 @@ type(students_frame.loc[["Mary","Lucy"],"grade"])
 ```python
 #Podem retornar una llista de varies files, i retorna una llista
 students_frame.loc[["Mary","Lucy"],
-                   ["grade","dual"]]
+                   ["grade","FCT"]]
 ```
 
 
@@ -849,7 +813,7 @@ students_frame.loc[["Mary","Lucy"],
     <tr style="text-align: right;">
       <th></th>
       <th>grade</th>
-      <th>dual</th>
+      <th>FCT</th>
     </tr>
   </thead>
   <tbody>
@@ -869,7 +833,7 @@ students_frame.loc[["Mary","Lucy"],
 
 
 ```python
-students_frame.loc[students_frame.index,["grade","dual"]]
+students_frame.loc[students_frame.index,["grade","FCT"]]
 ```
 
 
@@ -879,7 +843,7 @@ students_frame.loc[students_frame.index,["grade","dual"]]
     <tr style="text-align: right;">
       <th></th>
       <th>grade</th>
-      <th>dual</th>
+      <th>FCT</th>
     </tr>
   </thead>
   <tbody>
@@ -920,7 +884,7 @@ students_frame.loc[:,:]
     <tr style="text-align: right;">
       <th></th>
       <th>grade</th>
-      <th>dual</th>
+      <th>FCT</th>
     </tr>
   </thead>
   <tbody>
@@ -1020,7 +984,7 @@ students_frame.loc[students_pass,:]
     <tr style="text-align: right;">
       <th></th>
       <th>grade</th>
-      <th>dual</th>
+      <th>FCT</th>
     </tr>
   </thead>
   <tbody>
