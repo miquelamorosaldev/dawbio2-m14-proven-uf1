@@ -25,7 +25,19 @@ Aquesta opció <a href="./UF1_A01_Ses1_PreparacioEntornConda">la vam usar en cur
 - ✅  L'avantatge de la segona opció és que només cal aplicar els passos un sol cop, i ja podem emportar-nos tot el sistema a l'institut, a casa, a les FCT i on volguem. És útil per aprofitar les prestacions del PC. ✅
 - ⚠ L'inconvenient és que cal fer una petita inversió econòmica i de temps. ⚠
 
-En qualsevol cas recomanem que useu Python i Linux i exposarem les 2 maneres.
+#### Op3. Usar el WSL (Windows Subsystem for Linux). Ideal si som un usuari/a adminstrador/a.
+
+Seguiu el tutorial:
+
+https://www.arsys.es/blog/wsl-windows-subsystem-linux 
+
+I apliqueu aquesta comanda a la Windows PowerShell:
+
+```powershell
+wsl --install
+```
+
+En qualsevol cas recomanem que useu Python i Linux i exposarem les 3 maneres.
 
 ### 🐍 Sessió 1 - Repàs funcionalitats bàsiques de Python. 🐍
 
@@ -55,17 +67,27 @@ Podeu triar el format de document que preferiu (no cal els 2, són molt semblant
 
 ### 🐍 Sessió 2.2 - Exercicis explotació de dades de fitxers CSV amb Python. 🐍
 
-Documentació
+[Documentació i codi font](./UF1_S02_CSV_Scimago)
 
-Codi Font
+### 🐍 Sessió 3 - Testing i control versions sobre les consultes al fitxer CSV Scimago. 🐍
+
+[Documentació i codi font](./UF1_S03_Scimago_Tested)
 
 <hr/>
 
 ## Pròximament
 
-### Introducció a les API's amb Flask
 ### Arrays de Numpy i series de Pandas.
+
+[Documentació i codi font](./UF1_S04_Numpy)
+
 ### Pandas Dataframes.
+
+[Documentació i codi font](./UF1_S05_Pandas1)
+
+<hr/>
+
+### Introducció a les API's amb Flask
 
 ### 🖧 Preparació d'un entorn de desenvolupament amb Docker 🖧
 
