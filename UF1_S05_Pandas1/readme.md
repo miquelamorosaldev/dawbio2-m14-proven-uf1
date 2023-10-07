@@ -1,7 +1,12 @@
 # Sessió 5 - Pandas 1
 
 Seguirem  un document compartit on publicar en directe el que fem:
+
 https://docs.google.com/document/d/1t1CfE5HERkWI4AsWsW4XVGidY084AP4jOV5uVUCRchc/edit
+
+Aquest repositori no té tots els exemples, però són curts i estan al document compartit.
+
+Si que conté instruccions bàsiques de com arrencar-los.
 
 ### Instal·lacio Pandas: 
 
@@ -1044,6 +1049,26 @@ students_frame.loc[[True,True,True,False],:]
 </table>
 </div>
 
+<a name="sort"></a>
+
+## Ordenació dataframes.
+
+#### Ordenació per índex.
+
+```python
+#Ordenació per index axis=0 el index de la primera columna, axis=1 ordena els index de la primera columna.
+dataframe_sorted = students_frame.sort_index(axis=1, ascending=True)
+```
+Si l'índex és un text l'ordenarà alfabèticament, si és un número de major a menor (o la inversa si ascending=False)...
+
+#### Ordenació per valors de columnes.
+
+```python
+#Ordenació per valors axis=0 columnes i pel camp indicat dins del by.
+students_grade_sorted = students_frame.sort_values(by=['grade'], axis=0, ascending=False)
+#També és vàlida aquesta instrucció
+students_grade_sorted = students_frame.sort_values(['grade'],ascending=False)
+```
 
 <a name="exercicis">
 
