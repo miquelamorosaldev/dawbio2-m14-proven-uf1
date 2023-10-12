@@ -1069,23 +1069,3 @@ students_grade_sorted = students_frame.sort_values(by=['grade'], axis=0, ascendi
 #També és vàlida aquesta instrucció
 students_grade_sorted = students_frame.sort_values(['grade'],ascending=False)
 ```
-
-<a name="exercicis">
-
-## Exercicis Pandas.
-
-1. Crea un nou dataframe similar als dels alumnes, que tingui 4 - 6 files més (10 està bé) i 1 o 2 columnes més (per exemple: gènere, població)
-2. L'index ha de ser el nom de l'alumne. Apart de ser índex també ha de ser un camp.
-3. Mostra la mitjana de notes de tots els alumnes.
-4. Ordena els alumnes alfabèticament.
-5. Mostra tota la info d'un alumne, a partir del seu nom.
-6. Mostra les notes dels 3 alumnes que tenen una nota més alta.
-7. Usant una màscara, mostra els noms dels alumnes que volen fer FCT.
-8. Usant una màscara, mostra els alumnes que tenen una nota superior o igual a 7.
-9. Espai per a que creis 2 consultes i les seves solucions, a partir de les noves consultes que has creat.
-
-<a name="sol_exercicis">
-
-Podeu trobar les solucions fetes a classe al link:
-  
-[Exercicis Sessió5 Dataframes](./exercicisSessio5dataframes.py)
