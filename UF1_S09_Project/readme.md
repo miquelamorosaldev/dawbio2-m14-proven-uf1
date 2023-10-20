@@ -1,3 +1,17 @@
+# Sessions per a realitzar un projecte d'investigació de dades obertes.
+
+Més informació al document compartit:
+
+https://docs.google.com/document/d/1rbTW1A5T34ih9SL3YV16XdY7sHq3D6E_KbINA0KS-ok/edit
+
+Primer, analitzarem un dels projectes, el del Breast Cancer. 
+
+#### Pistes edició:
+
+Podeu eliminar informació innecessària separada amb el mètode str.replace. Exemple:
+
+tidy_data["marital_status"].str.replace(r"\(.*\)", "", regex=True)
+
 # Breast Cancer Dataset Info.
 
 ### References
