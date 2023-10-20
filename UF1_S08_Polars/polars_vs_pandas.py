@@ -145,7 +145,6 @@ def compare_runtimes(pandas_times, polars_times):
   # Displaying the graph
   plt.savefig('plot-pandas-vs-polars.png')
 
-
 nrows = 1000000
 file_name_pan = 'data_pandas.csv'
 file_name_pol = 'data_polars.csv'
@@ -169,42 +168,44 @@ print(f'polars_times.Create',time.time() - start_time)
 start_time = time.time()
 save_dataframe_to_csv(df_pandas, file_name_pan)
 # pandas_times['Save'] = time.time() - start_time
-print('pandas_times.Save' + " " + time.time())
+print('pandas_times.Save',time.time() - start_time)
 
 start_time = time.time()
 save_dataframe_to_csv(df_polars, file_name_pol)
 # polars_times['Save'] = time.time() - start_time
-print('polars_times.Save' + " " + time.time())
+print('polars_times.Save',time.time() - start_time)
 
 # Reading DataFrames
 start_time = time.time()
 df_pandas = read_dataframe_from_csv(file_name_pan, 'pandas')
 # pandas_times['Read'] = time.time() - start_time
+print('pandas_times.Read',time.time() - start_time)
 
 start_time = time.time()
 df_polars = read_dataframe_from_csv(file_name_pol, 'polars')
 # polars_times['Read'] = time.time() - start_time
+print('polars_times.Read',time.time() - start_time)
 
 # Sorting DataFrames
 start_time = time.time()
 sort_dataframe(df_pandas, 'gender', ascending=True)
 # pandas_times['Sort'] = time.time() - start_time
+print('pandas_times.Sort',time.time() - start_time)
 
 start_time = time.time()
 sort_dataframe(df_polars, 'gender', ascending=True)
 # polars_times['Sort'] = time.time() - start_time
+print('polars_times.Sort',time.time() - start_time)
 
 # Filtering DataFrames
 start_time = time.time()
 filter_dataframe(df_pandas, 'gender', 'Male')
 # pandas_times['Filter'] = time.time() - start_time
+print('pandas_times.Filtering',time.time() - start_time)
 
 start_time = time.time()
 filter_dataframe(df_polars, 'gender', 'Male')
 # polars_times['Filter'] = time.time() - start_time
-
-# GroupBy DataFrames
-# pandas_times['GroupBy'] = groupby_dataframe(df_pandas, 'zip_code')
-# polars_times['GroupBy'] = groupby_dataframe(df_polars, 'zip_code')
+print('polars_times.Filtering',time.time() - start_time)
 
 # compare_runtimes(pandas_times, polars_times)
