@@ -1,6 +1,19 @@
 # MP014 - Bioinformàtica.
-## UF1 - Informàtica mèdica.
+## UF1 - Informàtica mèdica. Apunts i exemples 2023 - 2024.
 <br/>
+
+Per compartir més fàcilment la teoria i exemples curs, anem publicant en aquests documents compartits:
+
+<a href="https://docs.google.com/document/d/1X-RTtJr6zzcd5WIBLuB50iACn0aA0MpwZEs_ZGhtuEI/edit">DAWBIO-14 - Bioinformàtica</a>
+
+També podeu trobar els projectes resolts des dels comptes:
+
+* https://github.com/miquelamorosaldev/
+
+* https://gitlab.com/xtec/
+
+En aquesta pàgina només mantenim actualitzades les primeres sessions.
+
 
 ## A01 - Entorn i llenguatge per processar dades biomèdiques.
 
@@ -73,21 +86,19 @@ Podeu triar el format de document que preferiu (no cal els 2, són molt semblant
 
 [Documentació i codi font](./UF1_S03_Scimago_Tested)
 
-<hr/>
-
-## Pròximament
-
-### Arrays de Numpy i series de Pandas.
+### Sessió 4 - Arrays de Numpy i series de Pandas.
 
 [Documentació i codi font](./UF1_S04_Numpy)
 
-### Pandas Dataframes.
+###  Sessió 5 - Pandas: Series i Dataframes.
 
 [Documentació i codi font](./UF1_S05_Pandas1)
 
 <hr/>
 
 ### Introducció a les API's amb Flask
+
+
 
 ### 🖧 Preparació d'un entorn de desenvolupament amb Docker 🖧
 
