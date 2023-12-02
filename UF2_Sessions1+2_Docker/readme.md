@@ -1,6 +1,6 @@
-# M15_UF1_A015 🖧 Preparació d'un entorn de desenvolupament amb Docker 🖧
+# 🖧 Preparació d'un entorn de desenvolupament amb Docker 🖧
 
-Els primers dies ja vam muntar el nostre entorn amb Linux, l'entorn virtual Anaconda...
+Els primers dies ja vam muntar el nostre entorn amb Linux, l'entorn virtual...
 
 Llavors, per a què muntem un altre entorn ? 
 
@@ -252,6 +252,6 @@ For more examples and ideas, visit:
 
 ☺☺ Enhorabona, ja hem arrencat el nostre primer programa amb Docker. ☺☺
 
-## <a href="../UF2_Sessions2+3_Docker/readme.md"> Accedeix a la pròxima sessió, on seguim muntant imatges de Docker més potents :) </a>
+## <a href="../Docker2/readme.md"> Accedeix a la pròxima sessió, on seguim muntant imatges de Docker més potents :) </a>
 
 <hr/>
