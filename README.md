@@ -1,5 +1,4 @@
 # MP014 - Bioinformàtica.
-## UF1 - Informàtica mèdica. Apunts i exemples 2023 - 2024.
 <br/>
 
 Per compartir més fàcilment la teoria i exemples curs, anem publicant en aquests documents compartits:
@@ -14,8 +13,15 @@ També podeu trobar els projectes resolts des dels comptes:
 
 En aquesta pàgina només mantenim actualitzades les primeres sessions.
 
+### 🖧 Preparació d'un entorn de desenvolupament amb Docker 🖧
 
-## A01 - Entorn i llenguatge per processar dades biomèdiques.
+Hem muntat l'entorn i les imatges necessaries el dia 04/12/2023:
+
+1. [Conceptes previs, instal·lació de Docker i el nostre primer contenidor](./Docker_s1)
+2. [Creem més contenidors de Docker](./Docker_s2)
+
+
+## UF1 - Informàtica mèdica. Apunts i exemples 2023 - 2024.
 
 ### Sessió 1 - Preparació entorn local: SO Linux, Python, venv i editor VSCode.
 
@@ -122,11 +128,5 @@ https://github.com/miquelamorosaldev/dawbio2-pt2-template-flask
 
 💻 Possible solució del projecte 2.
 https://github.com/miquelamorosaldev/dawbio2-pt2-solution
-
-
-### 🖧 Preparació d'un entorn de desenvolupament amb Docker 🖧
-
-1. [Conceptes previs, instal·lació de Docker i el nostre primer contenidor](./Docker_s1)
-2. [Creem més contenidors de Docker](./Docker_s2)
 
 <hr/>
