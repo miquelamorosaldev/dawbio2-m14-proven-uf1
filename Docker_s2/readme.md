@@ -1,11 +1,8 @@
-# M15_UF2 Ciencies Òmiques - Muntatge d'entorns Docker.
-
-### Autor: Pablo Garcia
-### Redacció: Miquel Angel Amorós
+# 🖧 Preparació d'un entorn de desenvolupament amb Docker, part 2 🖧
 
 Avui investigarem i provarem algunes de les imatges que disposa DockerHub per muntar un contenidor amb un entorn de desenvolupament (Python, PHP...)
 
-⚠Les carpetes que pengen (configs,pathlib,flask) les utilitzem a la última part d'aquesta sessió.⚠
+⚠ Les carpetes que pengen (configs,pathlib,flask) les utilitzem a la última part d'aquesta sessió. ⚠
 
 Al final de la sessió 1 vam muntar un HelloWorld. Repassem:
 - Imatge: Fitxers i directoris comprimits que contenen tot el necessari.

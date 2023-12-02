@@ -21,9 +21,9 @@ En aquesta pàgina només mantenim actualitzades les primeres sessions.
 
 Podem muntar l'entorn de treball de 2 maneres semblants:
 
-#### Op1. Una instal·lació d'una màquina virtual de Linux amb VirtualBox i ús del VSCode a Windows.
+#### Op1. RECOMANADA. Una instal·lació d'una màquina virtual de Linux amb VirtualBox i ús del VSCode a Windows.
 
-Aquesta opció <a href="https://docs.google.com/document/d/1q8HR7pqQf4RTePXK9fe7Q-ywn-COaPI4M1mXEn-Y-PQ/edit#heading=h.v2vgeymgts4e">la exposem pas a pas per aplicar-la aquest curs 2023-2023 en un Doc.Compartit</a>
+Aquesta opció <a href="https://docs.google.com/document/d/1q8HR7pqQf4RTePXK9fe7Q-ywn-COaPI4M1mXEn-Y-PQ/edit#heading=h.v2vgeymgts4e">la exposem pas a pas per aplicar-la aquest curs 2023-2024 en un Doc.Compartit</a>
 
 La pàgina oficial del projecte que usem és https://box.xtec.dev/
 
@@ -36,7 +36,7 @@ Aquesta opció <a href="./UF1_A01_Ses1_PreparacioEntornConda">la vam usar en cur
 
 
 - ✅  L'avantatge de la segona opció és que només cal aplicar els passos un sol cop, i ja podem emportar-nos tot el sistema a l'institut, a casa, a les FCT i on volguem. És útil per aprofitar les prestacions del PC. ✅
-- ⚠ L'inconvenient és que cal fer una petita inversió econòmica i de temps. ⚠
+- ⚠ L'inconvenient és que cal fer una inversió econòmica i de temps. ⚠
 
 #### Op3. Usar el WSL (Windows Subsystem for Linux). Ideal si som un usuari/a adminstrador/a.
 
@@ -74,15 +74,15 @@ Podeu triar el format de document que preferiu (no cal els 2, són molt semblant
 
 <hr/>
 
-### 🐍 Sessió 2.1 - Programació OO i Funcional amb Python. 🐍
+### Sessió 2.1 - Programació OO i Funcional amb Python.
 
 [Documentació i codi font](./UF1_S02_POO_Func)
 
-### 🐍 Sessió 2.2 - Exercicis explotació de dades de fitxers CSV amb Python. 🐍
+### Sessió 2.2 - Exercicis explotació de dades de fitxers CSV amb Python.
 
 [Documentació i codi font](./UF1_S02_CSV_Scimago)
 
-### 🐍 Sessió 3 - Testing i control versions sobre les consultes al fitxer CSV Scimago. 🐍
+### Sessió 3 - Testing i control versions sobre les consultes al fitxer CSV Scimago.
 
 [Documentació i codi font](./UF1_S03_Scimago_Tested)
 
@@ -90,21 +90,43 @@ Podeu triar el format de document que preferiu (no cal els 2, són molt semblant
 
 [Documentació i codi font](./UF1_S04_Numpy)
 
-###  Sessió 5 - Pandas: Series i Dataframes.
+### Sessió 5 - Pandas: Series i Dataframes.
 
 [Documentació i codi font](./UF1_S05_Pandas1)
 
+### Sessions posteriors (de la 6 a la 9)
+
+Per tal d'agilitzar la documentació s'ha optat per seguir un document compartit 
+indexat, que inclou enllaços als nostres repositoris de git.
+
+[🗎 Documentació i codi font en Docs.Compartits](https://docs.google.com/document/d/1X-RTtJr6zzcd5WIBLuB50iACn0aA0MpwZEs_ZGhtuEI/edit)
+
 <hr/>
 
-### Introducció a les API's amb Flask
+### Introducció a les API's amb Flask (sessions 10 - 12)
 
+Es troben en els mateixos docs. compartits.
+
+[🗎 Documentació i codi font en Docs.Compartits](https://docs.google.com/document/d/1X-RTtJr6zzcd5WIBLuB50iACn0aA0MpwZEs_ZGhtuEI/edit)
+
+També recomanem consultar els següents repositoris:
+
+💻 Exemple web plantilla amb serveis web Flask.
+https://gitlab.com/xtec/flask
+
+💻 Exemple web plantilla amb Flask i la llibreria de gràfics i mapes Plotly.
+https://gitlab.com/xtec/plotly
+
+💻 Projecte pràctic 2. Web amb Flask, gràfics i mapa.
+https://github.com/miquelamorosaldev/dawbio2-pt2-template-flask
+
+💻 Possible solució del projecte 2.
+https://github.com/miquelamorosaldev/dawbio2-pt2-solution
 
 
 ### 🖧 Preparació d'un entorn de desenvolupament amb Docker 🖧
 
-Material any 2022-2023; pendent provar de nou:
-
-1. [Conceptes previs, instal·lació de Docker i el nostre primer contenidor](./UF2_Sessions1+2_Docker)
-2. [Creem més contenidors de Docker](./UF2_Sessions2+3_Docker)
+1. [Conceptes previs, instal·lació de Docker i el nostre primer contenidor](./Docker_s1)
+2. [Creem més contenidors de Docker](./Docker_s2)
 
 <hr/>

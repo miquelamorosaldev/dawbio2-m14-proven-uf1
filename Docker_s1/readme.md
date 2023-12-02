@@ -1,4 +1,4 @@
-# 🖧 Preparació d'un entorn de desenvolupament amb Docker 🖧
+# 🖧 Preparació d'un entorn de desenvolupament amb Docker, part 1 🖧
 
 Els primers dies ja vam muntar el nostre entorn amb Linux, l'entorn virtual...
 
@@ -81,12 +81,12 @@ www.docker.com -> Docs -> Download and Install
 
 No usarem exactament els passos que proposa la pàgina. Usarem els següents:
 
-Obrim terminal d'Ubuntu:
+Obrim terminal d'Ubuntu, sense entorn virtual per ara:
 
 ```sh
-ubuntu-user$sudo apt update
-ubuntu-user$sudo apt install docker.io
-ubuntu-user$sudo apt install docker-compose
+box@m14$ sudo apt update
+box@m14$ sudo apt install docker.io
+box@m14$ sudo apt install docker-compose
 ```
 
 El docker-compose no l'usarem per ara però ens vindrà bé quan tinguem molts contenidors i volguem orquestrar-los (decidir en quin ordre s'executen i com interactuen entre ells). 
@@ -102,7 +102,13 @@ Primer, hem d'assignar-nos el grup de docker (que s'ha creat automàticament a l
 sudo usermod -aG docker $USER
 ```
 
-L'any que es va crear la Shell de Unix, també es van crear aquestes variables d'entorn ($USER,$PATH...), que avui en dia s'usen en tots els sistemes operatius.
+Per provar que s'ha aplicat el canvi de grup:
+```sh
+sudo /etc/group | grep docker
+docker:x:1000:box,miquel
+```
+
+L'any que es va crear la Shell de Unix, també es van crear aquestes variables d'entorn ($USER,$PATH...), que avui en dia s'usen en tots els sistemes operatius. Unix també va ser impulsor dels SO multiusuari.
 
 #### Provem si s'ha instal·lat Docker:
 
@@ -142,7 +148,7 @@ Moltes són semblants a Git, per facilitar la integració amb aquest.
 ### Image.
 
 Ârbre de fitxers i directoris comprimits que contenen tot el que necessita el meu entorn.
-Les imatges son només de lectura.
+Les **imatges son només de lectura.**
 Les guardarem al nostre PC, amb un sistema de fitxers especial. 
 Analogia: Semblant al codi instal·lable d'un programa.
 
@@ -153,8 +159,9 @@ docker image --help
 
 ### Contenidor.
 
-Procés aïllat que s'executa a partir de una imatge. Així obtenim més seguretat (no afectarà al sistema si cau un contenidor)
+**Procés aïllat que s'executa a partir de una imatge.** Així obtenim més seguretat (no afectarà al sistema si cau un contenidor)
 Analogia: Un procés de qualsevol sistema, que és un programa en execució.
+
 A priori són també de lectura; per garantir estabilitat. Es podria escriure per configurar-lo.
 També estan preparats per a ser reiniciats fàcilment si els contenidors cau.
 
@@ -251,6 +258,22 @@ For more examples and ideas, visit:
 ```
 
 ☺☺ Enhorabona, ja hem arrencat el nostre primer programa amb Docker. ☺☺
+
+⚠ Observació. La paraula podem fer **docker run** en comptes de docker container run
+
+Per exemple, si volem descarregar-nos i arrencar la imatge del projecte bio-kekule (que desplega un servei web al port 80) creat pel David de Mingo ho fariem així
+
+```sh
+docker run --rm -d --name kekule -p 80:80 registry.gitlab.com/xtec/bio-kekule
+```
+
+Gitlab inclou un servei que et permet administrar imatges de docker; una alternativa vàlida a dockerhub. 
+Més info a:
+https://docs.gitlab.com/ee/user/packages/container_registry/
+
+I Github també:
+https://docs.github.com/es/packages/working-with-a-github-packages-registry/working-with-the-docker-registry
+
 
 ## <a href="../Docker2/readme.md"> Accedeix a la pròxima sessió, on seguim muntant imatges de Docker més potents :) </a>
 
