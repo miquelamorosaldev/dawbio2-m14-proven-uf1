@@ -7,9 +7,9 @@ Per compartir més fàcilment la teoria i exemples curs, anem publicant en aques
 
 També podeu trobar els projectes resolts des dels comptes:
 
-* https://github.com/miquelamorosaldev/
-
 * https://gitlab.com/xtec/
+* 
+* https://github.com/miquelamorosaldev/
 
 En aquesta pàgina només mantenim actualitzades les primeres sessions.
 
