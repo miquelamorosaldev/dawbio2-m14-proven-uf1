@@ -52,39 +52,3 @@ print(f"5. {pregunta_5} \n   {respuesta_5}")
 print(f"6. {pregunta_6} \n   {respuesta_6}")
 print(f"7. {pregunta_7} \n   {respuesta_7}")
 print(f"8. {pregunta_8} \n   {respuesta_8}")
-
-
-# Configuració dels colors per als alels
-colors = {'PP': 'darkblue', 'Pp': 'mediumblue', 'pP': 'mediumblue', 'pp': 'lightblue',
-          'CC': 'darkgreen', 'Cc': 'mediumseagreen', 'cC': 'mediumseagreen', 'cc': 'lightgreen'}
-
-
-# Creació del gràfic del quadre de Punnett amb text
-fig, ax = plt.subplots()
-cax = ax.imshow(np.zeros_like(cuadro_punnett), cmap='Blues', vmin=0, vmax=1)
-
-# Afegir text a les caselles
-for i in range(len(genotips_cua)):
-    for j in range(len(genotips_pelatge)):
-        text = ax.text(j, i, cuadro_punnett[i, j], ha='center', va='center', color='black', fontsize=12)
-
-# Afegir la llegenda dels colors
-legend_labels = [plt.Line2D([0], [0], marker='o', color='w', label=label, markersize=10, markerfacecolor=color)
-                 for label, color in colors.items()]
-ax.legend(handles=legend_labels, loc='upper left', bbox_to_anchor=(1, 1))
-
-# Afegir etiquetes
-plt.xticks(range(len(genotips_pelatge)), genotips_pelatge)
-plt.yticks(range(len(genotips_cua)), genotips_cua)
-
-# Titol
-plt.title('Quadre de Punnett - Gats (Pelatge i Cua)')
-
-# Eliminar els eixos
-ax.set_xticks([])
-ax.set_yticks([])
-
-#fig.add_legend('Age distribution by class')
-plt.savefig('plot-dist1.png')
-
-
